@@ -1,0 +1,126 @@
+/* =========================================
+   1. VARIÁVEIS E CONFIGURAÇÕES GLOBAIS
+   ========================================= */
+:root {
+    --cor-primaria: #2c1e16;
+    --cor-secundaria: #4a3326;
+    --cor-destaque: #d4af37;
+    --cor-cta: #25d366;
+    --cor-cta-hover: #1ebe5b;
+    --cor-fundo: #faf8f6;
+    --cor-texto: #333333;
+    --cor-branco: #ffffff;
+    --cor-titulo-hero: #f5e6d3;
+    --cor-subtitulo-hero: #e0d5c8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. COMPONENTES REUTILIZÁVEIS
+   ========================================= */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--cor-primaria);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* =========================================
+   3. CABEÇALHO E HERO SECTION
+   ========================================= */
+.top-bar {
+    background-color: #1a1a1a;
+    color: var(--cor-destaque);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+header {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--cor-titulo-hero);
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: var(--cor-subtitulo-hero);
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: var(--cor-cta);
+    color: var(--cor-branco);
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--cor-cta-hover);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   4. SEÇÃO DE DIFERENCIAIS
+   ========================================= */
+.card {
+    background: var(--cor-branco);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.card h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #666666;
+}

@@ -4,74 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabelos Humanos Premium | 100% Naturais</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #faf8f6; color: #333; line-height: 1.6; }
-        .top-bar { background-color: #1a1a1a; color: #d4af37; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: bold; }
-        header { background: linear-gradient(135deg, #2c1e16 0%, #4a3326 100%); color: #fff; text-align: center; padding: 60px 20px; }
-        header h1 { font-size: 2.2rem; margin-bottom: 15px; color: #f5e6d3; }
-        header p { font-size: 1.1rem; max-width: 600px; margin: 0 auto 25px; color: #e0d5c8; }
-        .cta-btn { display: inline-block; background-color: #25d366; color: #fff; padding: 16px 32px; font-size: 1.1rem; font-weight: bold; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transition: 0.3s; }
-        .cta-btn:hover { background-color: #1ebe5d; transform: translateY(-2px); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-        .section-title { text-align: center; font-size: 1.8rem; margin-bottom: 30px; color: #2c1e16; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center; border-top: 4px solid #d4af37; }
-        .card h3 { margin-bottom: 10px; color: #2c1e16; }
-        .product-box { background: #fff; border-radius: 12px; padding: 30px; margin-top: 40px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); display: flex; flex-wrap: wrap; align-items: center; gap: 30px; }
-        .product-img { flex: 1; min-width: 280px; height: 280px; background: #e9dfd5; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #6e5849; font-weight: bold; }
-        .product-info { flex: 1; min-width: 280px; }
-        .price { font-size: 2rem; color: #2c1e16; font-weight: bold; margin: 15px 0; }
-        .guarantee { background: #f0ebe5; padding: 30px; border-radius: 10px; text-align: center; margin-top: 40px; }
-        footer { background: #1a1a1a; color: #aaa; text-align: center; padding: 20px; margin-top: 50px; font-size: 0.85rem; }
-    </style>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="top-bar">FRETE GRÁTIS PARA TODO O BRASIL • ENVIO IMEDIATO</div>
+    <div class="top-bar">
+        FRETE GRÁTIS PARA TODO O BRASIL • ENVIO IMEDIATO
+    </div>
 
     <header>
         <h1>Transforme Seu Visual com Cabelos 100% Humanos e Selecionados</h1>
         <p>Fios sedosos, cutículas alinhadas e zero mistura. Pronto para descolorir, hidratar e aplicar na técnica que você preferir.</p>
-        <a href="#ofertas" class="cta-btn">VER TABELA DE TAMANHOS E PREÇOS</a>
+        <a href="#tabela-precos" class="cta-btn">VER TABELA DE TAMANHOS E PREÇOS</a>
     </header>
 
-    <div class="container">
-        <h2 class="section-title">Por que escolher nossos fios?</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>100% Humano Natural</h3>
-                <p>Sem fios sintéticos ou misturas. Aceita chapinha, babyliss e processos químicos com total segurança.</p>
+    <main>
+        <section class="container" id="diferenciais">
+            <h2 class="section-title">Por que escolher nossos fios?</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>100% Humano Natural</h3>
+                    <p>Sem fios sintéticos ou misturas. Aceita chapinha, babyliss e processos químicos com total segurança.</p>
+                </article>
+                <article class="card">
+                    <h3>Pontas Cheias</h3>
+                    <p>Fios selecionados manualmente para garantir volume uniforme da raiz até as pontas.</p>
+                </article>
+                <article class="card">
+                    <h3>Durabilidade Extrema</h3>
+                    <p>Com os cuidados básicos de hidratação, o cabelo mantém o brilho e a maciez por anos.</p>
+                </article>
             </div>
-            <div class="card">
-                <h3>Pontas Cheias</h3>
-                <p>Fios selecionados manualmente para garantir volume uniforme da raiz até as pontas.</p>
-            </div>
-            <div class="card">
-                <h3>Durabilidade Extrema</h3>
-                <p>Com os cuidados básicos de hidratação, o cabelo mantém o brilho e a maciez por anos.</p>
-            </div>
-        </div>
+        </section>
+    </main>
 
-        <div class="product-box" id="ofertas">
-            <div class="product-img">[Espaço para Foto Real do Cabelo]</div>
-            <div class="product-info">
-                <h2>Cabelo Humano Liso Natural - 60cm (100g)</h2>
-                <p>Ideal para alongamento com queratina, fita adesiva ou ponto americano. Cor castanho natural virgem.</p>
-                <div class="price">12x de R$ 59,90</div>
-                <a href="#" class="cta-btn">COMPRAR AGORA COM DESCONTO</a>
-            </div>
-        </div>
-
-        <div class="guarantee">
-            <h3>Garantia Total de Satisfação</h3>
-            <p>Você tem 7 dias após o recebimento para avaliar a qualidade dos fios. Se não ficar satisfeita, devolvemos 100% do seu dinheiro.</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>© 2026 Loja Oficial Cabelos Premium. Todos os direitos reservados.</p>
-    </footer>
-
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="js/script.js"></script>
 </body>
 </html>
