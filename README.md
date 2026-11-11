@@ -71,3 +71,6 @@ pagina-cabelos/
 ## 👩‍💻 Autora
 
 Desenvolvido por **Ingrid** — Desenvolvedora Front-end em constante evolução.
+
+## 📸 Créditos
+- Imagens ilustrativas retiradas do banco gratuito [Pexels](https://pexels.com).
